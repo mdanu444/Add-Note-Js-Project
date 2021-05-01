@@ -1,0 +1,79 @@
+*{
+box-sizing: border-box;margin: 0; padding: 0;
+border: 0;
+}
+header{
+display: flex;
+justify-content: space-between;
+width: 100vw; margin: 0; padding: 5px;background: yellow;
+}
+.edit{
+	color: green;
+}
+.delet{
+	color: red;
+}
+i{
+	padding: 5px;
+	margin-right:20px;
+	font-size: 20px;
+}
+i:hover{
+	background: black;
+}
+.noteHeader{
+	background: lightgray;
+	display: flex;
+	width: 100%;
+	align-items: flex-end;
+}
+
+.note{
+	width: 300px; position: relative;
+	height: 210px;border: 1px solid gray;
+}
+.div{
+	width: 100%;
+	position: absolute;
+	top: 30px; left: 0;
+	height: 180px;
+	border: 1px solid gray;
+	font-size: 20px;padding: 15px;
+	display: block;
+}textarea{
+	z-index: 11;
+	min-height: 180px; 
+	min-width: 298px;
+	max-height: 180px; 
+	max-width: 298px;
+	position: absolute;
+	top: 30px; left: 0;
+	overflow: auto;
+	border: 1px solid gray;
+	font-size: 20px;padding: 15px;
+	display: block;
+}
+
+.delet, .edit{
+	background: none; float: right;
+}
+#addBtn{
+	padding: 10px; background: yellow; font-size: 25px; cursor: pointer; border-radius: 3px;
+	box-shadow: 0 0 5px;
+}
+#addBtn:hover{
+	background: #fff;
+	box-shadow: 0 0 5px;
+}
+
+#main{
+	display: flex; flex-wrap: wrap;
+}
+
+.note{
+	margin: 30px;
+}
+
+.hidden{
+	display: none;
+}
